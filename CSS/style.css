@@ -1,0 +1,36 @@
+p{
+    font-family:monospace;
+}
+.List
+{
+    color: brown;
+}
+b
+{
+    color: chocolate;
+}
+table,th,td
+{
+    border-style:solid;
+}
+tr td{
+    color: burlywood;
+}
+ul
+{
+    font-style: italic;
+    font-weight:lighter;
+    background-color: wheat;
+    text-align: justify;
+    width:fit-content;
+}
+body
+{
+    
+    background:linear-gradient(70deg,#FFB6A6,#F9E8A2,#73976A);
+}
+.read
+{
+    position: sticky;
+    top:2cm;
+}
