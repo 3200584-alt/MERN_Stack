@@ -4,59 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
-    <link rel="stylesheet" href="../CSS/Position.css">
+    <!-- <link rel="stylesheet" href="../CSS/Position.css"> -->
 </head>
 <body>
-    <div class="Data" id="Application">
-        <header>
+    <div class="Data" >
+        <header id="Application">
             <h1>Forms</h1>
         </header>
         <main>
             <form>
-                <label>Name:</label>
-                <input type="text" pulaceholder="Ramkumar">
+                <label >Name:</label>
+                <input id="name" type="text" pulaceholder="Ramkumar">
                 <br>
 
                 <label>Email:</label>
-                <input type="email" placeholder="3200584@dsengg.ac.in">
+                <input id="email" type="email" placeholder="3200584@dsengg.ac.in">
                 <br>
 
-                <label>Password:</label>
-                <input type="password" placeholder="usman610@2K5">
+                <label >Password:</label>
+                <input id="password" type="password" placeholder="usman610@2K5">
                 <br>
 
-                <label id = "no">Phone no:</label>
-                <input type="number" placeholder="3200584">
+                <label>Phone no:</label>
+                <input type="number" id="number" placeholder="3200584">
                 <br>
 
                 <label>Gender:</label>
-                <input type="radio" name="gender" id="1">Male
-                <input type="radio" name="gender" id="2">Female
+                <input type="radio" name="gender" id="1" value="Male">Male
+                <input type="radio" name="gender" id="2" value="Female">Female
                 <br>
 
                 <label>Qualification:</label>
-                <input type="checkbox">10 <sup>th</sup>
-                <input type="checkbox">12 <sup>th</sup>
-                <input type="checkbox">Diploma 
-                <input type="checkbox">Bachelors 
-                <input type="checkbox">Masters 
-                <input type="checkbox">Doctrate 
+                <input class="Qualification" type="checkbox" value="10th">10 <sup>th</sup>
+                <input class="Qualification" type="checkbox" value="12th">12 <sup>th</sup>
+                <input type="checkbox" class="Qualification" value="Diploma">Diploma 
+                <input type="checkbox" class="Qualification" value="Bachelors">Bachelors 
+                <input type="checkbox" value="Masters" class="Qualification">Masters 
+                <input type="checkbox" value="Doctrate" class="Qualification">Doctrate 
                 <br>
 
                 <label>D.O.B:</label>
-                <input type="datetime-local">
+                <input type="datetime-local" id="date">
                 <br>
 
                 <label>Image</label>
-                <input type="file">
+                <input type="file" id="image">
                 <br>
                
             </form>
         </main>
         <footer>
-             <button type="submit">Submit</button>
+             <button type="button" onclick="show()">Submit</button>
         </footer>
     </div>
+    <div id="result">
+
+    </div>
+    <script src="../JS/script.js"></script>
     
 </body>
 </html>
+
+
